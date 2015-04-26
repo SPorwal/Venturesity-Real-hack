@@ -1,0 +1,49 @@
+<Alloy>
+	<Window id="winMapScreen">
+		<View id="vwMain">
+			<View id="tabGroup">
+				<View id="vwCulture" class="tabClass" onClick="nsMapScreen.changeView">
+					<Label id="lblCulture" class="tblLblClass" text="Map View"></Label>
+					<View id="vwCultureSelected" selected = "true" class="tabSelected"></View>
+				</View>
+				<!-- <View id="vwTaste" class="tabClass" onClick="nsMapScreen.changeView">
+					<Label id="lblTaste" class="tblLblClass" text="Taste"></Label>
+					<View id="vwTasteSelected" selected="false" class="tabSelected"></View>
+				</View> -->
+				<View id="vwStreet" class="tabClass" onClick="nsMapScreen.changeView">
+					<Label id="lblStreet" class="tblLblClass" text="Street View"></Label>
+					<View id="vwStreetelected" selected="false" class="tabSelected"></View>
+				</View>
+			</View>
+			
+			<View id="tbGroup2">
+				<View id="vwA" class="tabClass" onClick="nsMapScreen.changeTabView">
+					<Label id="lblA" class="tblLblClass" text="ATM"></Label>
+					<View id="vwASelected" selected = "true" class="tabSelected"></View>
+				</View>
+				<View id="vwB" class="tabClass" onClick="nsMapScreen.changeTabView">
+					<Label id="lblB" class="tblLblClass" text="Food"></Label>
+					<View id="vwBSelected" selected = "false" class="tabSelected"></View>
+				</View>
+				<View id="vwC" class="tabClass" onClick="nsMapScreen.changeTabView">
+					<Label id="lblC" class="tblLblClass" text="Doctor"></Label>
+					<View id="vwCSelected" selected = "false" class="tabSelected"></View>
+				</View>
+				<View id="vwD" class="tabClass" onClick="nsMapScreen.changeTabView">
+					<Label id="lblD" class="tblLblClass" text="Transport"></Label>
+					<View id="vwDSelected" selected = "false" class="tabSelected"></View>
+				</View>
+			</View>
+			
+			<View id="vwTabViews">
+				<View id="vwCultureView" class="tabViewClass">
+				</View>
+				<!-- <View id="vwTasteView" class="tabViewClass">
+				</View> -->
+				<View id="vwStreetView" class="tabViewClass">
+					<ImageView id="ivStreetView"></ImageView>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

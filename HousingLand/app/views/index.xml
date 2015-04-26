@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id = "winIndex">
+		<View id="vwMain">
+			<Label id="lblSearch" text="Update Interests" onClick="nsIndex.getSearch"></Label>
+			<TableView id="tvResultData"></TableView>
+		</View>
+	</Window>
+</Alloy>
